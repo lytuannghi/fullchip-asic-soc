@@ -13,7 +13,7 @@ The design spans the entire silicon hierarchy: from a 5-stage pipelined RV32I pr
 
 ---
 
-## 🏛️ Full-Chip Silicon Architecture
+## Full-Chip Silicon Architecture
 
 ```
                     FULL-CHIP TAPE-OUT READY ASIC ARCHITECTURE
@@ -55,7 +55,7 @@ The design spans the entire silicon hierarchy: from a 5-stage pipelined RV32I pr
 
 ---
 
-## 🤖 Multi-Agent EDA Automation Suite
+## Multi-Agent EDA Automation Suite
 
 This project incorporates modern **AI-driven Electronic Design Automation (EDA)**:
 1. **SoC Chip Architect Agent (`agents/architect_agent.py`):**
@@ -67,7 +67,7 @@ This project incorporates modern **AI-driven Electronic Design Automation (EDA)*
 
 ---
 
-## 📐 SkyWater 130nm Physical Design (OpenLane Specification)
+## SkyWater 130nm Physical Design (OpenLane Specification)
 
 The physical layout files and configuration in `openlane/config.json` target the open-source **SkyWater 130nm High-Density (`sky130_fd_sc_hd`)** library:
 
@@ -83,7 +83,7 @@ The physical layout files and configuration in `openlane/config.json` target the
 
 ---
 
-## 📂 Cấu Trúc Thư Mục Dự Án
+## Cấu Trúc Thư Mục Dự Án
 
 ```
 fullchip-asic-soc/
@@ -131,7 +131,7 @@ fullchip-asic-soc/
 
 ---
 
-## 🚀 Hướng Dẫn Chạy Toàn Bộ Quy Trình (Chỉ 1 Dòng Lệnh)
+## Hướng Dẫn Chạy Toàn Bộ Quy Trình (Chỉ 1 Dòng Lệnh)
 
 Chạy kịch bản tự động hóa trọn gói (gồm cả Multi-Agent EDA review, biên dịch iverilog, mô phỏng vvp và kiểm toán kết quả):
 
