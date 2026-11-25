@@ -60,8 +60,8 @@ The design spans the entire silicon hierarchy: from a 5-stage pipelined RV32I pr
 This project incorporates modern **AI-driven Electronic Design Automation (EDA)**:
 1. **SoC Chip Architect Agent (`agents/architect_agent.py`):**
    - Automatically inspects and audits memory map alignments, address decoding boundaries, and pinout constraints across the die.
-2. **STA & PPA Optimization Agent (`agents/sta_timing_agent.py`):**
-   - Evaluates static timing constraints (Setup/Hold slack at 50 MHz), gate count estimates (~14,800 standard cells), and dynamic power consumption (~8.4 mW @ 1.8V VDD).
+2. **STA & PPA Audit Agent (`agents/sta_timing_agent.py`):**
+   - Evaluates static SDC timing constraints (50 MHz budget) and structural RTL synthesis readiness (Yosys/OpenSTA required for gate-level cell counts and post-layout power).
 3. **Autonomous Verification Agent (`agents/verification_agent.py`):**
    - Ingests simulation stdout traces, checks protocol handshake assertions, and verifies data integrity.
 
