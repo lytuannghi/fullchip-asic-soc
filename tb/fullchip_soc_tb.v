@@ -104,7 +104,7 @@ module fullchip_soc_tb;
     integer k;
     initial begin
         // Setup Waveform dump
-        $dumpfile("D:/CODE/GGANTIGRAVITY/minipj/output/fullchip_soc_waveform.vcd");
+        $dumpfile("sim/fullchip_soc_waveform.vcd");
         $dumpvars(0, fullchip_soc_tb);
 
         PAD_CLK       = 0;
@@ -121,7 +121,7 @@ module fullchip_soc_tb;
 
         // Preload Firmware into Dual-Port SRAM at 0x0000_0400
         $display("[STAGE 1] Loading Firmware Image into On-Chip SRAM (4KB)...");
-        $readmemh("D:/CODE/GGANTIGRAVITY/fullchip-asic-soc/firmware/boot_firmware.hex", u_dut.u_sram.mem, 0);
+        $readmemh("firmware/boot_firmware.hex", u_dut.u_sram.mem, 0, 40);
         $display("          -> Firmware Loaded Successfully (Entry: 0x0000_0400).");
 
         // Release Power-On Reset

@@ -14,3 +14,7 @@ sim/*.vcd
 __pycache__/
 *.pyc
 .env
+
+sim/cocotb_build/
+results.xml
+*.xml
